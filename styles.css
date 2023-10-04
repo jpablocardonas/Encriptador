@@ -1,0 +1,98 @@
+*{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 3%;
+}
+
+main{
+    display: flex; /*Con esta propiedad se alinean los elementos de manera horizontal*/
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    border:none; /*Le quita el borde al área de texto*/
+    color:#0A3871; /*Es el color del texto*/
+    margin-top: 90px;
+    text-transform: lowercase; /*Se transforma el texto a minúscula*/
+}
+
+/*👇 El placeholder hace referencia al texto por defecto que aparece en el área de texto*/
+::placeholder {
+    color: #0A3871;
+}
+
+/*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: #FFF;
+    background-image: url(recursos/Muñeco.svg);
+    background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed; /*Hace que el elemento adopte su posición con respecto a la ventana del navegador, es como si flotara, y se queda quieto a pesar de se haga scroll*/
+}
+
+/*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-desencriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    width: 336px;
+    position: absolute; /*Es como si flotara. El margen no se calcula desde los elementos aledaños sino desde la ventana del navegador*/
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
