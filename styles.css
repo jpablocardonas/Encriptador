@@ -46,7 +46,7 @@ main{
 
 .mensaje {
     background: #FFF;
-    background-image: url(recursos/Muñeco.svg);
+    background-image: url(recursos/Muñeco.png);
     background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
     border: none;
     border-radius: 24px;
