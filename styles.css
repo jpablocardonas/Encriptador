@@ -7,22 +7,30 @@
     line-height: 150%;
 }
 
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 3%;
+.cabecera{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo {
+    height: 80%;
 }
 
 main{
     display: flex; /*Con esta propiedad se alinean los elementos de manera horizontal*/
-    margin-bottom: 50px;
-    margin-left: 80px;
+    height: 90vh;
+    margin-left: 70px;
 }
 
 .text-area{
     border:none; /*Le quita el borde al área de texto*/
     color:#0A3871; /*Es el color del texto*/
-    margin-top: 90px;
+    padding: 0px;
+    height: 50vh;
+    width: 100%;
+    resize: none;
     text-transform: lowercase; /*Se transforma el texto a minúscula*/
 }
 
@@ -47,6 +55,7 @@ main{
     margin-top: 20px;
     padding-left: 20px;
     position: fixed; /*Hace que el elemento adopte su posición con respecto a la ventana del navegador, es como si flotara, y se queda quieto a pesar de se haga scroll*/
+    resize: none;
 }
 
 /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
@@ -56,7 +65,8 @@ main{
 
 .botones {
     display: flex;
-    margin-top: 18px;
+    width: auto;
+    height: 10vh;
 }
 
 .btn-encriptar {
@@ -70,10 +80,10 @@ main{
 }
 
 .btn-desencriptar {
-    background-color: #0A3871;
+    background-color: #F3F5FC;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    color: white;
+    color: #0A3871;
     cursor: pointer;
     height: 67px;
     margin-left: 30px;
@@ -95,4 +105,7 @@ main{
 .informacion {
     color: #495057;
     font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 10vh;
 }
