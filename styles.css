@@ -7,7 +7,7 @@
     line-height: 150%;
 }
 
-.cabecera{
+header{
     height: 10vh;
     display: flex;
     align-items: center;
@@ -21,22 +21,35 @@
 main{
     display: flex; /*Con esta propiedad se alinean los elementos de manera horizontal*/
     height: 90vh;
-    margin-left: 70px;
+}
+
+section{
+    height: 90vh;
+}
+
+.seccion-1{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-area{
     border:none; /*Le quita el borde al área de texto*/
     color:#0A3871; /*Es el color del texto*/
-    padding: 0px;
+    padding: 10px;
     height: 50vh;
-    width: 100%;
+    width: 90%;
     resize: none;
+    border-radius: 2%;
     text-transform: lowercase; /*Se transforma el texto a minúscula*/
+    box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+    margin: 30px;
 }
 
 /*👇 El placeholder hace referencia al texto por defecto que aparece en el área de texto*/
 ::placeholder {
-    color: #0A3871;
+    color: #0a38716e;
 }
 
 /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
@@ -44,29 +57,23 @@ main{
     outline: none;
 }
 
-.mensaje {
-    background: #FFF;
-    background-image: url(recursos/Muñeco.png);
-    background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
-    border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed; /*Hace que el elemento adopte su posición con respecto a la ventana del navegador, es como si flotara, y se queda quieto a pesar de se haga scroll*/
-    resize: none;
+.fila-dos{
+    display: flex;
+    width: 90%;
 }
 
-/*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
-.mensaje:focus {
-    outline: none;
+h6{
+    margin: 0px 0px 0px 10px;
+    font-size:large;
+    color: #0000008e;
 }
 
 .botones {
+    width: 90%;
     display: flex;
-    width: auto;
-    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .btn-encriptar {
@@ -75,8 +82,9 @@ main{
     border-radius: 24px;
     color: white;
     cursor: pointer;
-    height: 67px;
-    width: 328px;
+    height: 50px;
+    width: 280px;
+    font-size: 28px;
 }
 
 .btn-desencriptar {
@@ -85,9 +93,40 @@ main{
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
+    height: 50px;
     margin-left: 30px;
-    width: 328px;
+    width: 280px;
+    font-size: 28px;
+}
+
+.seccion-2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje {
+    background: #FFF;
+    background-image: url(recursos/Muñeco.png);
+    background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
+    background-position-x: center;
+    background-position-y: center;
+    border: none;
+    color: #0A3871;
+    height: 47vh;
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+    padding: 20px;
+    resize: none;
+    border-radius: 2%;
+    box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+    margin-bottom: 103px;
+}
+
+/*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+.mensaje:focus {
+    outline: none;
 }
 
 .copiar {
@@ -95,17 +134,442 @@ main{
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    width: 336px;
-    position: absolute; /*Es como si flotara. El margen no se calcula desde los elementos aledaños sino desde la ventana del navegador*/
+    height: 50px;
+    width: 280px;
+    font-size: 28px;
 }
 
-.informacion {
-    color: #495057;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    height: 10vh;
+@media screen and (max-width: 992px) {
+    *{
+        background: #F3F5FC;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 32px;
+        line-height: 150%;
+    }
+    
+    header{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .logo {
+        height: 80%;
+    }
+    
+    main{
+        display: flex; /*Con esta propiedad se alinean los elementos de manera horizontal*/
+        height: 90vh;
+    }
+    
+    section{
+        height: 90vh;
+    }
+    
+    .seccion-1{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-area{
+        border:none; /*Le quita el borde al área de texto*/
+        color:#0A3871; /*Es el color del texto*/
+        padding: 10px;
+        height: 50vh;
+        width: 90%;
+        resize: none;
+        border-radius: 2%;
+        text-transform: lowercase; /*Se transforma el texto a minúscula*/
+        box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+        margin: 30px;
+    }
+    
+    /*👇 El placeholder hace referencia al texto por defecto que aparece en el área de texto*/
+    ::placeholder {
+        color: #0a38716e;
+    }
+    
+    /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+    .text-area:focus {
+        outline: none;
+    }
+    
+    .fila-dos{
+        display: flex;
+        width: 90%;
+    }
+    
+    h6{
+        margin: 0px 0px 0px 10px;
+        font-size:large;
+        color: #0000008e;
+    }
+    
+    .botones {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .btn-encriptar {
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: white;
+        cursor: pointer;
+        height: 50px;
+        width: 280px;
+        font-size: 28px;
+    }
+    
+    .btn-desencriptar {
+        background-color: #F3F5FC;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 50px;
+        margin-left: 30px;
+        width: 280px;
+        font-size: 28px;
+    }
+    
+    .seccion-2{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mensaje {
+        background: #FFF;
+        background-image: url(recursos/Muñeco.png);
+        background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
+        background-position-x: center;
+        background-position-y: center;
+        border: none;
+        color: #0A3871;
+        height: 47vh;
+        width: 80%;
+        margin: 30px 0px 0px 0px;
+        padding: 20px;
+        resize: none;
+        border-radius: 2%;
+        box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+        margin-bottom: 103px;
+    }
+    
+    /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+    .mensaje:focus {
+        outline: none;
+    }
+    
+    .copiar {
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 50px;
+        width: 280px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        background: #F3F5FC;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 32px;
+        line-height: 150%;
+    }
+    
+    header{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .logo {
+        height: 80%;
+    }
+    
+    main{
+        display: flex; /*Con esta propiedad se alinean los elementos de manera horizontal*/
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .seccion-1{
+        width: 90%;
+        height:45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .text-area{
+        border:none; /*Le quita el borde al área de texto*/
+        color:#0A3871; /*Es el color del texto*/
+        padding: 10px;
+        height: 100%;
+        width: 90%;
+        resize: none;
+        border-radius: 2%;
+        text-transform: lowercase; /*Se transforma el texto a minúscula*/
+        box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+        margin: 30px;
+    }
+    
+    /*👇 El placeholder hace referencia al texto por defecto que aparece en el área de texto*/
+    ::placeholder {
+        color: #0a38716e;
+    }
+    
+    /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+    .text-area:focus {
+        outline: none;
+    }
+    
+    .fila-dos{
+        display: flex;
+        width: 90%;
+    }
+    
+    h6{
+        margin: 0px 0px 0px 10px;
+        font-size:large;
+        color: #0000008e;
+    }
+    
+    .botones {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .btn-encriptar {
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: white;
+        cursor: pointer;
+        height: 50px;
+        width: 280px;
+        font-size: 28px;
+    }
+    
+    .btn-desencriptar {
+        background-color: #F3F5FC;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 50px;
+        margin-left: 30px;
+        width: 280px;
+        font-size: 28px;
+    }
+    
+    .seccion-2{
+        width: 90%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .mensaje {
+        background: #FFF;
+        background-image: url(recursos/Muñeco.png);
+        background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 50%;
+        border: none;
+        color: #0A3871;
+        height: 55%;
+        width: 85%;
+        resize: none;
+        border-radius: 2%;
+        text-transform: lowercase; /*Se transforma el texto a minúscula*/
+        box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+        margin: 30px;
+    }
+    
+    /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+    .mensaje:focus {
+        outline: none;
+    }
+    
+    .copiar {
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 50px;
+        width: 280px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    *{
+        background: #F3F5FC;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 28px;
+        line-height: 150%;
+    }
+    
+    header{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    
+    .logo {
+        height: 80%;
+    }
+    
+    main{
+        display: flex; /*Con esta propiedad se alinean los elementos de manera horizontal*/
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .seccion-1{
+        width: 90%;
+        height:45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .text-area{
+        border:none; /*Le quita el borde al área de texto*/
+        color:#0A3871; /*Es el color del texto*/
+        padding: 10px;
+        height: 100%;
+        width: 90%;
+        resize: none;
+        border-radius: 2%;
+        text-transform: lowercase; /*Se transforma el texto a minúscula*/
+        box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+        margin: 30px;
+    }
+    
+    /*👇 El placeholder hace referencia al texto por defecto que aparece en el área de texto*/
+    ::placeholder {
+        color: #0a38716e;
+    }
+    
+    /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+    .text-area:focus {
+        outline: none;
+    }
+    
+    .fila-dos{
+        display: flex;
+        width: 90%;
+    }
+    
+    h6{
+        margin: 0px 0px 0px 10px;
+        font-size:large;
+        color: #0000008e;
+        font-size: 14px;
+    }
+    
+    .botones {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .btn-encriptar {
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: white;
+        cursor: pointer;
+        height: 50px;
+        width: 280px;
+        font-size: 20px;
+    }
+    
+    .btn-desencriptar {
+        background-color: #F3F5FC;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 50px;
+        margin-left: 30px;
+        width: 280px;
+        font-size: 20px;
+    }
+    
+    .seccion-2{
+        width: 90%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .mensaje {
+        background: #FFF;
+        background-image: url(recursos/Muñeco.png);
+        background-repeat: no-repeat; /*Para que no se repida como mosaico la imagen importada*/
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 70%;
+        border: none;
+        color: #0A3871;
+        height: 55%;
+        width: 85%;
+        resize: none;
+        border-radius: 2%;
+        text-transform: lowercase; /*Se transforma el texto a minúscula*/
+        box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.26);
+        margin: 30px;
+    }
+    
+    /*Me permite controlar lo que ocurre cuando le doy clic al elemento*/
+    .mensaje:focus {
+        outline: none;
+    }
+    
+    .copiar {
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 50px;
+        width: 280px;
+        font-size: 20px;
+    }
 }
